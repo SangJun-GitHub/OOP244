@@ -1,0 +1,40 @@
+// Workshop 2: Dynamic Memory
+
+// File reflect
+// Date 2018.02.04
+
+// Author Sang Jun, Park
+
+// Description
+
+// Email sjpark24@myseneca.ca
+
+// Student number 112293170
+
+1)Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+Because when we create the dynamic memory, we allocate their size. Arrays are stored in consecutive memory, and you never know whether or not the memory immediately after the array is already allocated for something else. 
+So,if we want to extend about dynamic memory, we create a new dynamic memory, and then we transfer that information of old dynamic memory to new dynamic memory. 
+
+2)The Kingdom structure stores the name of the kingdom in an array of char-acters. At the end of the program, we do not use the delete operator to deallocate the memory occupied by the name. Why don’t we need to use the delete operator on this array itself? Explain.
+We do not have a memory leak because the pointer to dynamic memory does not change the value before the deallocation of application.
+
+3)There are two display(...) function definitions. How does the compiler know which definition to call from your main function? 
+When the function is called, the compiler by examining the types passed as arguments.
+
+4)Explain what have you have learned in this workshop.
+I learn how to use dynamic memory and how to use private and public in a class.
+
+
+Quiz 1 Reflection:
+1. What are three main characteristics that a language must have in order to be called an oop language? enumerate them and explain one (any)in a short sens thence.
+Encapsulation - encapsulation binds together the data and functions that manipulate the data, and that keeps both safe from outside interference and misuse
+Inheritance - inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application.
+Polymorphism - polymorphism means when we call a function, a function be executed depending on the type of object that invokes the function.
+
+2. Member functions of a class can be classified into three mutually exclusive categories. enumerate them.
+Queries - tell state of the object, can not change the state of the object
+Modifiers - change the state of the object
+Special - create, assign and destroy a object
+
+3. Explain the meaning of the keyword private in c++?
+When we use a struct, it gives some permission to access anywhere. However, if we use a privacy in class, we can limit accessibility to members.
