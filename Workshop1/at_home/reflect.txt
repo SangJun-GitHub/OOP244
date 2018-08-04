@@ -1,0 +1,23 @@
+1.What is a namespace? Explain its purpose.
+The namespace encloses variables, contents to use that within each namespace.
+Even if different programmers use same identifiers, the namespace prevents conflict of same identifiers.
+
+2.Why are header files needed? Explain.
+A header file is a file containing declarations and contents to be shared between several source files.
+
+3.In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+Generally, a header file is contained declarations that can be safely run in different source files. 
+If we compile a header file, it makes slow when we compile our program. So, it is not necessary.
+
+4.Explain why you should never include .cpp files in another file.
+A program does not have a problem with the small code, but if a code will be bigger when we compile we spend a lot of times. 
+It removes advantage when we separate our code.
+
+5.Explain in your own words what have you learned on this workshop.
+I learned how to separate full code for cohesion and coupling. 
+Also, I learned safeguards for header file which is when we compile a code with reduplication of declarations. 
+Finally, I could study C++ code with that workshop.
+
+
+Quiz X Reflection: 
+this week, we did not take a quiz. 
