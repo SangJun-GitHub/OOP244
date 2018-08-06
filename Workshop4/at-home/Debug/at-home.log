@@ -1,0 +1,10 @@
+﻿  Passenger.cpp
+c:\users\bobsa\desktop\ws04\at-home\passenger.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+c:\users\bobsa\desktop\ws04\at-home\passenger.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+c:\users\bobsa\desktop\ws04\at-home\passenger.cpp(92): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+c:\users\bobsa\desktop\ws04\at-home\passenger.cpp(93): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(136): note: see declaration of 'strcpy'
+LINK : fatal error LNK1168: cannot open C:\Users\bobsa\Desktop\WS04\at-home\Debug\at-home.exe for writing

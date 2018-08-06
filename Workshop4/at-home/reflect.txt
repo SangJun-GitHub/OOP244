@@ -1,0 +1,38 @@
+/////////////////////////////////////////
+// Workshop 4 - Constructors - Test Main
+// reflect.txt
+// Sang Jun, Park
+// 2/18/2018
+//
+/////////////////////////////////////////
+1)What is a safe empty state? Could you define another state as the safe empty state?
+Safe empty state means it is not garbage value in an object. 
+Even we did not initialize our value, we can say it is empty. 
+But safe empty state means we decide which kind of value be empty. 
+For example, if we did not initialize a value of char, there is a garbage in there, but if we decide value '\0' is an empty state, and then we can make safe empty state with initializing value as '\0'. 
+If we make value safe empty state, also it is not working correctly.
+
+2)Describe how you have minimized code duplication.
+We can reduce code duplication with class constructor, namespace, and inheritance. 
+Namespace helps us to avoid the same identifier when we use the same identifier. 
+Which means we can reduce code duplication. And class constructor helps us to reduce duplication. 
+Because when we use class constructor we do not have to set value every time.
+Also, we can make some checking system in a class constructor. 
+Using a class constructor, we can check valid value and initialize value.
+Also, inheritance helps reduce code duplication.
+
+3)Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+Because const Passenger& is a reference to the class, the canTravelWith(...) can access to private data.
+
+4)What statement do you need to add to ensure that the strncpy(...) func-tion executes correctly?
+strncpy () function does not automatically add the final line '\ 0' at the end. 
+So, we have to add '\0' at the end. For example, the copied string is shorter than source string, end of the copied string is not '\0'.
+So, we have to explicitly add '\0' end of the copied string.
+
+5)Explain what you have learned in this workshop.
+I learned how to make objects to safe empty state with a constructor. 
+And I learned overloaded constructors depend on given conditions. 
+And I learned how to use current object and reference to objects.
+
+Quiz  Reflection
+I did not get quiz result yet
