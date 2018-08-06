@@ -1,0 +1,61 @@
+/**********************************************************
+// Workshop 3: Classes and Privacy
+// reflection.txt
+// Version 2.1
+// 2018/02/11
+// Sang Jun, Park
+// Description
+// Email: sjpark24@myseneca.ca
+// Student number: 112293170
+// 
+//
+// Revision History
+///////////////////////////////////////////////////////////
+// Name			Date		          Reason
+// 
+///////////////////////////////////////////////////////////
+**********************************************************/
+Reflection
+1)How many elements are there in each C-style character string that stores a family or given name for the account? Why?
+There are 41 elements in there. my max_name_length is 40 which means inculde element of 'null', so if I want to 40 spaces of arry, I should add one more space.
+That is why I write "char m_familyName[max_name_length + 1];" in my hearder file.
+
+2)Your class declares two member functions named set(...).  In C, this would generate an error.  Name the feature of C++ that allows this.
+C++ can distinguish different function by parameters.
+If there are same name functions in there, we call that function an overloaded function.
+C++ recognize identifier at the first for call a function, then distinguish by parameters. 
+So, C++ compiler chooses the function by matching the type of arguments and the type of parameters.
+
+3)What have you learned during this workshop?
+I leaned overloaded function and I practiced  using different libraries. Also, I leanded how to define public and pravate objects in a class.
+I leanded why I should  add one more space when I create an array.
+
+Quiz  2 Reflection
+//utilities.h
+#ifndef QUIZ2_UTILITIES_H
+#define QUIZ2_UTILITIES_H
+namespace quiz2
+{
+   void printParam(float);
+   void printParam(char& x, int = 5);
+}
+#endif
+
+Quiz  3 Reflection
+#ifndef QUIZ03_PAINTING_H
+#define QUIZ03_PAINTING_H
+namespace quiz03
+{
+   class painting
+   {
+   private:
+      char m_name[41]; // name of paint
+      int m_paint;  //number of paint
+      float m_cost; // cost of paint
+
+   public:
+      void add(const* name, int paint, float cost); //add paint
+      void display()const; //display all paint and cost
+   }
+}
+#endif
