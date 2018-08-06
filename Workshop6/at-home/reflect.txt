@@ -1,0 +1,14 @@
+// Workshop 6 - Class with a Resource
+// reflect.txt
+// Snag Jun Park
+// 2018/03/18
+
+1)Why does the copy assignment operator check for self-assignment before doing anything else?
+It avoids copying the same information that already exists in the member address. in my code, there is m_phoneNumber of type array. And then if I write m_phoneNumber[i] = rhs.m_phoneNumber[i] without self-assignment check, the program results in unpredictable behavior because there is no self-assignment check in the above code. To avoid the above issue, the self-assignment check must be there while overloading assignment operator. 
+
+2)List how you avoided duplication of code.
+If I need the same working in another function. call that function, not write the same code in there. Additionally, through logical thinking, we can reduce unnecessary codes. Also, we can avoid code duplication using templates.
+
+3)List what you have learned in completing this workshop.
+I learned assignment operator, cout.width(4), cout.fill('0').
+I did not understand how to use dynamic memory before. However, I learned how to use dynamic memory with this workshop. I am still confusing about dynamic memory, but this workshop makes me reduce confusing.

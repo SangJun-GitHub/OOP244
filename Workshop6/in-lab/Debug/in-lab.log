@@ -1,0 +1,5 @@
+﻿  Contact.cpp
+c:\users\bobsa\desktop\ws06\in-lab\contact.cpp(43): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\bobsa\desktop\ws06\in-lab\contact.cpp(34): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+  in-lab.vcxproj -> C:\Users\bobsa\Desktop\WS06\in-lab\Debug\in-lab.exe
