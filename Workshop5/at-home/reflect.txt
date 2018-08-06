@@ -1,0 +1,96 @@
+1.The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object.
+If you exit scope, we lose reference. So, we should use a Fraction object when we return.
+
+2.List the temporary objects in the tester module.
+sict::Fraction a;
+Fraction b(1, 3);
+Fraction c(-5, 15);
+Fraction d(2, 4);
+Fraction e(8, 4);
+(a + b).display();
+(b + d).display();
+(b += d).display();
+b.display();
+cout << ((a == c) ? "true" : "false");
+cout << ((a != c) ? "true" : "false");
+
+3.List the simplifications that you made to your class to minimize duplication.
+bool isEmpty() const;
+int max() const;
+int min() const;
+void reduce();
+int gcd() const;
+above things hepl my code to reduce duplicationm. If i did not use these, I re-write code aging for clacualting.
+
+4.Explain what you have learned in this workshop.
+I learned how to use operator with overload, and I learned about reference.
+
+Quiz 4 reflection
+1. Give an example of a class where overloding operatoers makes sense(what would be the overloaded operators and what would they do)
+For instance, you writing class membership where you need write Name, Last name, Age etc. and display it. So, by overloading you can pass int Age or string Name to function which is displaying name. Or it makes sence if you need implement two functions which give possibilities to display name and display name and lastname.
+class Membership{
+string display name(string name)
+{
+  console.writeline(name);
+}
+string display FirstLastName(string naem, string lastname)
+{
+  console.writeline(name + " " + lastname);
+}
+}
+
+2. based on the number of operands, the C++ operators can be classified into 3 categories, Name those categoies and give examples of operators in each category.
+
+unary - post-fix increment/decrement, pre-fix increment/decrement, pre-fix plus, pre-fix minus 	
+ex) (++, --)
+
+binary - assignment, compound assignment, arithmetic, relational, logical
+ex) (=, +=, ==, <, >=)
+
+ternary -- conditional operator
+ex)(?:)
+
+3. explain what is the purpose of a destructor in a C++ class.
+We use destructor for complete encapsulation, we have to remove dynamic memory for don't lose memory. if we did not use destructor dynamic memory exist in memory, it makes we can lose memory. for this reason, we should use a destructor.
+
+Quiz 5 reflection	
+//Videogame.h
+#ifndef QUIZE05_VIDEOGAME_H
+#define QUIZE05_VIDEOGAME_H
+
+namespace quiz05 {
+    class VideoGame 
+    {
+    private:
+        char m_name[31];
+        float* m_cost;
+    public:
+        VideoGame();
+        VideoGame(const char name[], const float cost);
+        ~VideoGame();
+    };
+}
+#endif
+
+// Videogame.cpp
+#include <iostream>
+#include <cstring>
+#include "Videogame.h"
+
+using namespace quiz05;
+
+VideoGame::VideoGame() {
+    this->m_name[0] = '/0'
+    this->m_cost = nullptr;
+}
+
+VideoGame::VideoGame(const char name[], const float cost) 
+{
+
+}
+
+VideoGame::~VideoGame() 
+{
+
+}
+
