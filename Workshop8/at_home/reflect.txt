@@ -1,0 +1,16 @@
+// OOP244 Workshop 8: Virtual Functions and Abstract Base Classes
+// File: reflect.txt
+// Version: 2.0
+// Date: 2018/04/01
+// Author: Sang Jun Park
+// Description:
+// This file tests in_lab section of your workshop
+///////////////////////////////////////////////////
+1. What is the difference between an abstract base class and a concrete class?
+The difference between an abstract base class and a concrete class is the level of implementation. A concrete class is a class that can be used to create an object. An abstract class cannot be used to create an object. the concrete class is like a "stamp" which we can make a cookie with that stamper. An abstract class is like a blueprint for the stamper. We can make cookies with only blueprint of stamper.
+
+2. Identify the functions that shadow functions of the same name in your solution?
+In my code, display, monthEnd, credit, and debit functions shadowed. Because I defined virtual functions in "iAccount.h", It postpones the compiler search function from compile-time to run-time. when the program running time, the program identify the most fittable function with parameters.
+
+3. Explain what have you learned in this workshop.
+I learned inheritance, pure virtual classes, abstract and base classes through this workshop. Additionally, I learned how to reduce duplication of codes.
